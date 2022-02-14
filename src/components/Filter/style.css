@@ -1,0 +1,21 @@
+.filter {
+    margin: 3rem 0;
+}
+
+.filter input {
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+     border-radius: 20px;
+     border: 1px solid grey;
+     color: black;
+     width: 15%;
+     height: 30px;
+     padding-left: 10px;
+    
+}
+
+.filter input:focus {
+    outline: none;
+    border: 1px solid black;
+    color: black;
+}

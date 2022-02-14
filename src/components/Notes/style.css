@@ -1,0 +1,16 @@
+.note {
+    width: 30%;
+    height: 10rem;
+    display: inline-block;
+    margin: 3rem;
+    border: black 1px solid;
+}
+
+.note p {
+    font-size: 20px;
+    display: flex;
+    margin-left: 2rem;
+    overflow: auto;
+    word-wrap:break-word
+    
+}
