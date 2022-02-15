@@ -4,9 +4,12 @@ import "./style.css";
 
 function Notes() {
   const notes = useSelector((state) => state.notesList.notes);
+  let searchQuery = useSelector((state) => state.notesList.searchQuery);
+  let filterq = searchQuery.toLowerCase();
+  let filtered = notes.filter((item) => item.note.includes(filterq));
   return (
     <div>
-      {notes.map((item) => (
+      {filtered.map((item) => (
         <div
           className="note"
           style={{ backgroundColor: `${item.noteColor}` }}
